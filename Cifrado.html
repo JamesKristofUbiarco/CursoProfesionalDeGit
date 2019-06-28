@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tipos de cifrado</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        strong {
+            color: rebeccapurple;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,11 +23,38 @@
     <p>
         <strong>Llave privada</strong> puede abrir <strong>llave publica</strong>
         <br>
-        <strong>Llave pública</strong> encripta mediante un algoritmo el mensaje a enviar el cual solo puede ser invertido mediante la <strong>llave privada</strong>
+        <strong>Llave pública</strong> encripta mediante un algoritmo el mensaje a enviar el cual solo puede ser
+        invertido mediante la <strong>llave privada</strong>
     </p>
-    <p></p>
+    <hr>
+    <h3>Conectarse a github mediante ssh</h3>
     <p>
-        <img src="img/cifrado.png" width="100%">
+        Se guarda una llave privada en nuestra computadora mientras a github le enviamos una llave publica para poder
+        realizar la conexion
+    </p>
+    <p>
+        Generar par de llave publica privada rsa. Comando: <br>
+        ssh-keygen -t rsa -b 4096 -C "ricardoqb95@gmail.com" <br>
+        <strong> -t rsa </strong> tipo de algoritmo <br>
+        <strong> -b 4096 </strong> tamaño de encriptacion
+    </p>
+    <p>
+        Se recomienda dejar el archivo en la ruta del usuario .ssh/
+    </p>
+    <p>
+        <strong>eval $(ssh-agent -s)</strong> verificar que este corriendo el servicio de ssh
+    </p>
+    <p>
+        Agregar la llave privada al ssh <br>
+        <strong>ssh-add id_rsa</strong>
+    </p>
+    <p>
+        Agregar la llave a github
+    </p>
+    <p>
+        <img src="img/cifrado.png" width="49%">
+        <iframe src="files/cifrado.pdf" width="49%" height="500px"></iframe>
+
     </p>
 </body>
 
