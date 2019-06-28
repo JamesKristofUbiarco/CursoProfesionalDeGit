@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tags y versiones</title>
+    <style>
+        strong {
+            color: darkorchid;
+        }
+    </style>
+</head>
+
+<body>
+    <li><a href="Index.html">Volver</a></li>
+    <p>
+        Comando para mostrar el log mas bonito y ordenado <br>
+        <strong>git log --all --graph --decorate --oneline</strong> <br>
+    </p>
+    <p>
+        Agregar alias al comando <br>
+        <strong>alias nombre=</strong>"comando"
+    </p>
+    <p>
+        <strong>git tag</strong> mostrar tags
+    </p>
+    <p>
+        <strong>git tag -a &lt;identificador&gt; -m "&lt;mensaje&gt;" &lt;UUID&gt;</strong> crear un tag para identificar una version desde algun uuid
+    </p>
+    <p>
+        <strong>git show-ref --tags</strong> mostar la referencia de los tags
+    </p>
+    <p>
+        <strong>git push origin --tags</strong> sube los tags
+    </p>
+    <p>
+        <strong>git tag -d &lt;tag a borrar&gt;</strong> elimina un tag de manera interna<br>
+        <strong> git push origin :refs/tags/&lt;tag a borrar&gt;</strong> elimina la tag en github
+    </p>
+</body>
+
+</html>
