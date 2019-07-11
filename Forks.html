@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fork</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fork</title>
+    </head>
 
-<body>
-    <li><a href="Index.html">Volver</a></li>
-    <h3>Forks</h3>
-    <p>
-        Cuando se quiere contribuir a un proyecto sin ser colaborador directo  se hace un forkal proyecto original desde github, para que se cree una copia en nuestra cuenta de github y tengamos una copia actual del proyecto que queremos hacer cambios
-    </p>
-    <p>
-        Para descargarlo en nuestro local se debe hacer el comando <br>
-        <strong>git clone &lt;url&gt;</strong> <br>
-    </p>
-    <p>
-        Todos los cambios que se hagan se hara en neustro repositorio clonado en github, y si se quiere combinar con el del dueño se hace un pull request para que el lo acepte y se queden guardades finalemnte los cambios
-    </p>
-    <p>
-        Como nuestro repositorio local esta conectado a nuestro proyecto en github, este no se actualiza del original por lo que se debe crear un nuevo apuntador para poder descargar cambios del original, por lo que se creaun <strong>upstream</strong> hacia el repositorio original <br>
-        <strong> git remote add &lt;upstream&gt; &lt;url&gt;</strong> <br>
-        Y asi descargar siempre los cambios del original con <strong>git pull upstream master</strong>  y una vez que se tengan los cambios actuales del original se actualiza hacia nuestro propio repositorio con <strong>git push origin master</strong> para que este actualizado nuestro repositorio
-    </p>
-</body>
+    <body>
+        <li><a href="Index.html">Volver</a></li>
+        <h3>Forks</h3>
+        <p>
+            Cuando se quiere contribuir a un proyecto sin ser colaborador directo se hace un fork al proyecto original desde github, 
+            para que se cree una copia en nuestra cuenta de github y tengamos una copia actual del proyecto que queremos hacer cambios
+        </p>    
+        <p>
+            Para descargarlo en nuestro local se debe hacer el comando <br>
+            <strong>git clone &lt;url&gt;</strong> <br>
+        </p>
+        <p>
+            Todos los cambios que se hagan se harán en nuestro repositorio clonado en github, y si se quiere combinar con el del dueño se 
+            hace un pull request para que el lo acepte y se queden guardados finalmente los cambios
+        </p>
+        <p>
+            Como nuestro repositorio local esta conectado a nuestro proyecto en github, este no se actualiza del original por lo que se 
+            debe crear un nuevo apuntador para poder descargar cambios del original, por lo que se crea un <strong>upstream</strong> 
+            hacia el repositorio original <br> <strong> git remote add &lt;upstream&gt; &lt;url&gt;</strong> <br>
+            Y asi descargar siempre los cambios del original con <strong>git pull upstream master</strong>  y una vez que se tengan los 
+            cambios actuales del original se actualiza hacia nuestro propio repositorio con <strong>git push origin master</strong> para 
+            que esté actualizado nuestro repositorio
+        </p>
+    </body>
 
 </li>
